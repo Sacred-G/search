@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "I'm Feeling like a Bouldin",
         "I'm Feeling Playful",
         "I'm Feeling Stellar",
-        "I'm Feeling Doodleimdy",
+        "I'm Feeling Doodleidy",
         "I'm Feeling Trendy",
         "I'm Feeling Artistic",
         "I'm Feeling Funny"
