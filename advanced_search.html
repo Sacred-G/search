@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noogle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="https://about.google.com">About</a>
+            <a href="https://store.google.com">Store</a>
+            <a href="index.html">Home</a>
+        </div>
+ 
+
+        <a href="https://accounts.google.com/SignOutOptions?hl=en&amp;continue=https://www.google.com/&amp;ec=GBRAmgQ"><span class="material-symbols-outlined" style="position: absolute;display: flex;right:30px;">account_circle</span><span class="user-profile-text"></span></a>
+        </div>
+
+        <div class="header-controls">
+            <div class="apps-button-container" class="apps-button">
+                <svg viewBox="0 0 24 24">
+                    <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2z"></path>
+                </svg>
+            </div>
+            <div class="user-profile"></div>
+        </div>
+       
+    </header>
+
+    <main>
+       <div class="section">
+        <form id="advanced-search-form">
+         
+            <div class="form-section">
+                <div class="title">
+                <h1>Advanced Search</h1>
+                <h2>Find pages with...</h2> <h3>to do this in the search box...</h3></div>
+                <div class="form-row">
+                    <label for="all-words">all these words:</label>
+                    <input type="text" id="all-words" name="as_q">
+                    <div class="hint">Type the important words: tricolor rat terrier</div>
+                </div>
+                <div class="form-row">
+                    <label for="exact-phrase">this exact word or phrase:</label>
+                    <input type="text" id="exact-phrase" name="as_epq">
+                    <div class="hint">Put exact words in quotes: "rat terrier"</div>
+                </div>
+                <div class="form-row">
+                    <label for="any-words">any of these words:</label>
+                    <input type="text" id="any-words" name="as_oq">
+                    <div class="hint">Type OR between all the words you want: miniature OR standard</div>
+                </div>
+                <div class="form-row">
+                    <label for="none-words">none of these words:</label>
+                    <input type="text" id="none-words" name="as_eq">
+                    <div class="hint">Put a minus sign just before words you don't want: -rodent, -"Jack Russell"</div>
+                </div>
+                <div class="form-row">
+                    <label for="numbers-range">numbers ranging from:</label>
+                    <div class="range-inputs">
+                        <label for="numbers-range-low">from</label>
+                        <input type="number" id="numbers-range-low" name="as_nlo">
+                        <label for="numbers-range-high">to</label>
+                        <input type="number" id="numbers-range-high" name="as_nhi">
+                    </div>
+                    <div class="hint">Put 2 periods between the numbers and add a unit of measure: 10..35 lb, $300..$500, 2010..2011</div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Then narrow your results by...</h2>
+                <div class="form-row">
+                    <label for="language">language:</label>
+                    <select id="language" name="lr" class="select-input">
+                        <option value="">any language</option>
+                        <!-- Add more language options here -->
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="region">region:</label>
+                    <select id="region" name="cr" class="select-input">
+                        <option value="">any region</option>
+                        <!-- Add more region options here -->
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="last-update">last update:</label>
+                    <select id="last-update" name="as_qdr" class="select-input">
+                        <option value="all">anytime</option>
+                        <option value="d">past 24 hours</option>
+                        <option value="w">past week</option>
+                        <option value="m">past month</option>
+                        <option value="y">past year</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="site-domain">site or domain:</label>
+                    <input type="text" id="site-domain" name="as_sitesearch" class="text-input">
+                    <div class="hint">Search one site (like wikipedia.org) or limit your results to a domain like .edu, .org or .gov</div>
+                </div>
+                <div class="form-row">
+                    <label for="terms-appearing">terms appearing:</label>
+                    <select id="terms-appearing" name="as_occt" class="select-input">
+                        <option value="any">anywhere in the page</option>
+                        <option value="title">in the title of the page</option>
+                        <option value="body">in the text of the page</option>
+                        <option value="url">in the URL of the page</option>
+                        <option value="links">in links to the page</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="safe-search">SafeSearch:</label>
+                    <select id="safe-search" name="safe" class="select-input">
+                        <option value="images">Show explicit results</option>
+                        <option value="active">Hide explicit results</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="file-type">file type:</label>
+                    <select id="file-type" name="as_filetype" class="select-input">
+                        <option value="">any format</option>
+                        <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                        <option value="ps">Adobe Postscript (.ps)</option>
+                        <option value="doc">Microsoft Word (.doc)</option>
+                        <option value="xls">Microsoft Excel (.xls)</option>
+                        <option value="ppt">Microsoft Powerpoint (.ppt)</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="usage-rights">usage rights:</label>
+                    <select id="usage-rights" name="as_rights" class="select-input">
+                        <option value="">not filtered by license</option>
+                        <option value="cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived">free to use or share</option>
+                        <option value="cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial|cc_nonderived">free to use or share, even commercially</option>
+                        <option value="cc_publicdomain|cc_attribute|cc_sharealike|cc_noncommercial">free to use, share or modify</option>
+                        <option value="cc_publicdomain|cc_attribute|cc_sharealike">free to use, share or modify, even commercially</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Advanced Search" class="submit-button">
+                </div>
+            </div>
+        </form>
+        </div>
+    </main>
+
+    <script src="advanced-search.js"></script>
+</body>
+</html>
